@@ -14,9 +14,11 @@ export const Header: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    let normalizedTitle = title.trim();
+    const normalizedTitle = title.trim();
+
     if (!normalizedTitle) {
       inputRef.current?.focus();
+
       return;
     }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { TodosProvider } from './todos/context';
 import { Footer, Header, TodoList } from './todos/components';
 
-
 export const App: React.FC = () => {
   return (
     <TodosProvider>
